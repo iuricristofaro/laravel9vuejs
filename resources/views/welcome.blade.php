@@ -20,12 +20,12 @@
             }
         </style>
 
-    <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet" />
+    <link href="{{ mix('css/app.css') }}" type="text/css" rel="stylesheet" />
 
     </head>
     <body class="antialiased">
         <div id="app">        
-            <router-view></router-view>
+            <router-view />
         </div>
         {{-- <div id="app" class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
@@ -134,6 +134,6 @@
                 </div>
             </div>
         </div> --}}
-        <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
+        <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
     </body>
 </html>

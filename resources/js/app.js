@@ -8,7 +8,11 @@ import store from './vuex/store';
 
 
 
-createApp(App)
+createApp({
+    components: {
+        App
+    }
+})
     .use(store)
     .use(router)
     .mount('#app')

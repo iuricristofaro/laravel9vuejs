@@ -1,16 +1,16 @@
 
-import Vuex from 'vuex';
+import { createStore } from 'vuex'
 
-import Categories from './modules/categories/categories';
-
-
-Vue.use(Vuex)
+import categories from './modules/categories/categories'
 
 
-export default store = new Vuex.Store({
+
+
+
+export default createStore ({
     modules: {
-        categories: Categories
+        categories: categories
 
     }
-});
+})
 
